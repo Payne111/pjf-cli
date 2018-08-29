@@ -22,7 +22,7 @@ program
         require(res('md'))
     })
 
-// 
+// 第一次push到github
 program
     .command('gh')
     .description('First push to github.')
