@@ -14,11 +14,20 @@ program
 program
     .usage('<command>')
 
+// 创建README.md
 program
     .command('md')
     .description('Create README.md.')
     .action(() => {
         require(res('md'))
+    })
+
+// 
+program
+    .command('gh')
+    .description('First push to github.')
+    .action(() => {
+        require(res('first2github'))
     })
 
 program.parse(process.argv)
